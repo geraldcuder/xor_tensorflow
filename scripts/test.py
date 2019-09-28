@@ -5,6 +5,10 @@ import numpy as np
 
 
 def main():
+    """
+    Load the trained model from the models/-directory and execute an infinite-loop that collects user input
+    and uses the model for predicting the output.
+    """
     # load model
     try:
         model = load_model('models/model.h5')
