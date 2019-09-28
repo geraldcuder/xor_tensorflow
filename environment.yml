@@ -84,6 +84,7 @@ dependencies:
   - send2trash=1.5.0=py_0
   - setuptools=41.2.0=py37_0
   - sip=4.19.8=py37hf484d3e_1000
+  - six=1.12.0=py37_1000
   - sqlite=3.29.0=hcee41ef_1
   - terminado=0.8.2=py37_0
   - testpath=0.4.2=py_1001
@@ -106,11 +107,12 @@ dependencies:
     - google-pasta==0.1.7
     - grpcio==1.23.0
     - h5py==2.10.0
+    - keras==2.3.0
     - keras-applications==1.0.8
     - keras-preprocessing==1.1.0
     - markdown==3.1.1
     - protobuf==3.9.2
-    - six==1.12.0
+    - pyyaml==5.1.2
     - tensorboard==1.14.0
     - tensorflow==1.14.0
     - tensorflow-estimator==1.14.0
