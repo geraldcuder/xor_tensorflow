@@ -17,6 +17,10 @@ def main():
         # Get user input
         user_input = input("input> ")
 
+        # Exit the loop
+        if user_input == "exit":
+            return False
+
         # Convert it to a numpy-array of the correct shape
         try:
             X_new = np.array(user_input.split(','), dtype='float32').reshape(1, 2)
@@ -37,9 +41,6 @@ def main():
 
         print('output> ' + str(y_pred.ravel()[0]))
 
-        # Exit the loop
-        if user_input == "exit":
-            return False
 
 
 if __name__ == "__main__":
