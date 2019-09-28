@@ -26,7 +26,7 @@ def main():
                   metrics=['accuracy'])
 
     # Fit model on data
-    model.fit(X, y, epochs=200, verbose=1)
+    model.fit(X, y, epochs=500, verbose=1)
 
     # Save trained weights and architecture
     model.save("models/model.h5")
