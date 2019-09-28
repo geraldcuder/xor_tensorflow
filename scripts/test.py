@@ -42,6 +42,5 @@ def main():
         print('output> ' + str(y_pred.ravel()[0]))
 
 
-
 if __name__ == "__main__":
     main()
