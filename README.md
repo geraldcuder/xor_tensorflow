@@ -2,6 +2,8 @@
 
 This repository contains a simple neural network that solves the XOR-Problem. The network was created using `keras` and `tensorflow`. Furthermore, a simple program is provided that allows the user to test the trained model. The `environment.yml` makes sure that the user can recreate the conda environment in which this example was build.
 
+In addition to the keras model, a tensorflow implementation the same network can be found in the notebook `2_tensorflow_implementation` in the `notebooks/` folder.
+
 ## How to run 
 
 1) Create a virtual environment by using one of the following options:
