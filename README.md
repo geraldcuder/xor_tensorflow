@@ -4,7 +4,18 @@ This repository contains a simple neural network that solves the XOR-Problem. Th
 
 ## How to run 
 
-1) Use the `Makefile` and run `make xx_environment` to recreate the environment this expample was build in, whereas the `xx` stands either for `osx_` or `linux_` due to some build-issues (see notes).
+1) Create a virtual environment by using one of the following options:
+   
+   **Conda environment**  
+   Use the `Makefile` and run `make xx_environment` to recreate the environment this expample was build in, whereas the `xx` stands either for `osx_` or `linux_` due to some build-issues (see notes).
+
+   **Pipenv**  
+   A `Pipfile` and a `Pipfile.lock` are provided if you prefer to use `pipenv`. Use the command
+   `$ pipenv shell` in the project directory.
+
+   **requirements.txt**  
+   If you prefer to use a plain `requirements.txt` to create a virtual environment using `virtualenv`.
+
 2) Run `make train` to train a simple neural network created in keras, consisting of one hidden dense layer with 16 neurons. The model should be saved in the directory `models/`
 3) Run `make test` to load the trained model. A command-prompt should appear showing `input>`. 
 4) Enter a command of the shape `x, y` whereas `x` and `y` map to two input sources that are either `0` or `1`, i.e `input> 1, 0`. 
