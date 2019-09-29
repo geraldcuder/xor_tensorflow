@@ -13,7 +13,7 @@ In addition to the keras model, a tensorflow implementation the same network can
 
    **Pipenv**  
    A `Pipfile` and a `Pipfile.lock` are provided if you prefer to use `pipenv`. Use the command
-   `$ pipenv shell` in the project directory.
+   `$ pipenv shell` in the project directory. Then execute `$ pipenv sync` to install all missing packages.
 
    **requirements.txt**  
    If you prefer to use a plain `requirements.txt` to create a virtual environment using `virtualenv`.
