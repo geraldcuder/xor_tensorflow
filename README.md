@@ -4,7 +4,7 @@ This repository contains a simple neural network that solves the XOR-Problem. Th
 
 ## How to run 
 
-1) Use the `Makefile` and run `make environment` to recreate the environment this expample was build in. 
+1) Use the `Makefile` and run `make xx_environment` to recreate the environment this expample was build in, whereas the `xx` stands either for `osx_` or `linux_` due to some build-issues (see notes).
 2) Run `make train` to train a simple neural network created in keras, consisting of one hidden dense layer with 16 neurons. The model should be saved in the directory `models/`
 3) Run `make test` to load the trained model. A command-prompt should appear showing `input>`. 
 4) Enter a command of the shape `x, y` whereas `x` and `y` map to two input sources that are either `0` or `1`, i.e `input> 1, 0`. 
@@ -23,4 +23,9 @@ I used a simple feed-forward neural network with one hidden dense layer using a 
 The short answer to this question is that one hidden layer, one input and one output layer are required to get valid results. 
 
 However, in the `notebook/`-folder, the notebook `1_xor_prototype_keras.ipynb` shows several experiments with different model architectures. It can be stated that more complex architectures, such as an increased number of hidden layers and/or an increased number of neurons per layer can certainly improve the performance of the model in a way that fewer epochs are required to get a higher accuracy. 
+
+## Notes
+
+* This example was created under Linux (Ubuntu 18.04 LTS) and tested on a Mac. Due to some conda-issues, two separate `environment.yml`-files were created. If you use Linux, use the `linux_environment.yml`, and `osx_environment.yml` if you use MacOS. 
+* This example uses Python 3.7
 
